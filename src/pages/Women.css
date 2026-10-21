@@ -1,0 +1,69 @@
+
+.women {
+  width: 85%;
+  max-width: 1440px;
+  margin: 48px auto 80px;
+}
+
+.women__title {
+  margin-bottom: 8px;
+  color: #252525;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+}
+
+.women__subtitle {
+  margin-bottom: 32px;
+  color: #777777;
+  font-size: 14px;
+}
+
+.women__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.women__message {
+  width: 85%;
+  margin: 60px auto;
+  color: #555555;
+  font-size: 16px;
+  text-align: center;
+}
+
+.women__section + .women__section {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+}
+
+@media (max-width: 1024px) {
+  .women__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .women {
+    width: 92%;
+    margin-top: 32px;
+  }
+
+  .women__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 18px;
+  }
+
+  .women__subtitle {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .women__grid {
+    gap: 20px 10px;
+  }
+}

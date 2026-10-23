@@ -1,0 +1,410 @@
+
+/* ABOUT HERO */
+.about-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 65px 8%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 17, 25, 0.82),
+      rgba(12, 17, 25, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=85")
+      center 35% / cover no-repeat;
+  color: #ffffff;
+}
+
+.about-hero__content {
+  max-width: 680px;
+  animation: aboutFadeUp 0.7s ease both;
+}
+
+.about-label {
+  display: inline-block;
+  color: #626b78;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  line-height: 1.7;
+}
+
+.about-hero .about-label {
+  color: #d5e5fa;
+  font-size: 11px;
+}
+
+.about-hero__content h1 {
+  margin: 20px 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5.5vw, 65px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.about-hero__content h1 span,
+.about-company__heading h2 span,
+.about-difference__inner h2 span,
+.about-founder__content h2 span,
+.about-commitment__inner h2 span {
+  color: #548bd0;
+  font-style: italic;
+}
+
+.about-hero__content h1 span {
+  color: #75aaf5;
+}
+
+.about-hero__content > p {
+  max-width: 460px;
+  margin: 0;
+  color: #f0f2f5;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.about-hero__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.about-hero__link svg {
+  transition: transform 0.25s ease;
+}
+
+.about-hero__link:hover {
+    color: #75aaf5;
+    border-bottom-color: #75aaf5;
+}
+
+.about-hero__link:hover svg {
+  transform: translateX(4px);
+}
+
+.about-hero__number {
+  position: absolute;
+  right: 8%;
+  bottom: 24px;
+  color: #ffffff;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+/* WHO WE ARE */
+.about-company {
+  width: 84%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 75px 0;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 65px;
+  scroll-margin-top: 90px;
+}
+
+.about-company__heading h2,
+.about-difference__inner h2,
+.about-founder__content h2,
+.about-commitment__inner h2 {
+  margin: 18px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 47px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.about-company__content > p,
+.about-difference__inner > p,
+.about-founder__content > p,
+.about-commitment__inner > p {
+  margin: 0 0 15px;
+  color: #626b78;
+  font-size: 12px;
+  line-height: 1.95;
+}
+
+/* WHAT MAKES US DIFFERENT */
+.about-difference {
+  padding: 65px 8%;
+  background: #f7f9fc;
+}
+
+.about-difference__inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.about-difference__inner h2 {
+  margin-bottom: 24px;
+}
+
+.about-difference__inner > p {
+  max-width: 740px;
+}
+
+/* FOUNDER */
+.about-founder {
+  width: 84%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 75px 0;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.about-founder__image {
+  width: 100%;
+  overflow: hidden;
+  background: #e8edf4;
+}
+
+.about-founder__image img {
+  display: block;
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  object-position: center 35%;
+  transition: transform 0.5s ease;
+}
+
+.about-founder__content h2 {
+  margin-bottom: 22px;
+}
+
+.about-founder__details {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.about-founder__line {
+  width: 35px;
+  height: 2px;
+  background: #548bd0;
+}
+
+.about-founder__details h3 {
+  margin: 0;
+  color: #15191f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.about-founder__details p {
+  margin: 5px 0 0;
+  color: #626b78;
+  font-size: 10px;
+}
+
+/* SECTION 04 — OUR COMMITMENT */
+.about-commitment {
+  padding: 50px 8%;
+  background: #151b26;
+}
+
+.about-commitment__inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.about-commitment .about-label {
+  color: #b8cbe4;
+}
+
+.about-commitment__inner h2 {
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.about-commitment__inner h2 span {
+  color: #75aaf5;
+}
+
+.about-commitment__inner > p {
+  max-width: 600px;
+  margin-bottom: 0;
+  color: #d0d7e1;
+}
+
+/* BACK TO HOME LINK */
+.about-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.about-home-link svg {
+  transition: transform 0.25s ease;
+}
+
+.about-home-link:hover {
+  color: #75aaf5;
+}
+
+.about-home-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* ANIMATION */
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .about-hero {
+    min-height: 380px;
+    padding: 55px 6%;
+  }
+
+  .about-company,
+  .about-founder {
+    width: 88%;
+    gap: 35px;
+  }
+
+  .about-company {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
+  .about-founder {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .about-founder__image img {
+    height: 320px;
+  }
+
+  .about-difference {
+    padding: 55px 6%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .about-hero {
+    min-height: 340px;
+    padding: 50px 6%;
+    background-position: center, 58% center;
+  }
+
+  .about-hero__content h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .about-hero__content > p {
+    font-size: 12px;
+  }
+
+  .about-hero__number {
+    right: 6%;
+    bottom: 17px;
+    font-size: 8px;
+  }
+
+  .about-company,
+  .about-founder {
+    width: 88%;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 50px 0;
+  }
+
+  .about-company__heading h2,
+  .about-difference__inner h2,
+  .about-founder__content h2,
+  .about-commitment__inner h2 {
+    font-size: 37px;
+  }
+
+  .about-company__content > p,
+  .about-difference__inner > p,
+  .about-founder__content > p,
+  .about-commitment__inner > p {
+    font-size: 12px;
+  }
+
+  .about-difference {
+    padding: 50px 6%;
+  }
+
+  .about-founder__image img {
+    height: 340px;
+  }
+
+  .about-commitment {
+    padding: 40px 6%;
+  }
+
+  .about-home-link {
+    margin-top: 20px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+  .about-hero__content h1 {
+    font-size: 35px;
+  }
+
+  .about-company__heading h2,
+  .about-difference__inner h2,
+  .about-founder__content h2,
+  .about-commitment__inner h2 {
+    font-size: 32px;
+  }
+
+  .about-founder__image img {
+    height: 280px;
+  }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  .about-hero__content {
+    animation: none;
+  }
+
+  .about-hero__link,
+  .about-hero__link svg,
+  .about-home-link,
+  .about-home-link svg,
+  .about-founder__image img {
+    transition: none;
+  }
+}

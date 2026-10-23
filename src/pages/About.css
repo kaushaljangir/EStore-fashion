@@ -265,6 +265,7 @@
 
 .about-home-link:hover {
   color: #75aaf5;
+  border-bottom-color: #75aaf5;
 }
 
 .about-home-link:hover svg {

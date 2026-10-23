@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import "./About.css";
 import founderImg from "../assets/Founder-img.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -158,10 +159,10 @@ const About = () => {
             together.
           </p>
 
-          <a href="/" className="about-home-link">
+          <Link to="/" className="about-home-link">
             BACK TO HOME
             <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </section>
     </main>

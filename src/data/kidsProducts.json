@@ -1,0 +1,527 @@
+{
+  "products": [
+    {
+      "id": 201,
+      "title": "Kids Blue Printed T-Shirt",
+      "description": "A comfortable blue cotton T-shirt for kids featuring a fun printed design. Suitable for everyday wear, school outings and casual activities.",
+      "category": "kids-clothing",
+      "price": 12.99,
+      "discountPercentage": 10.5,
+      "rating": 4.5,
+      "stock": 42,
+      "tags": ["clothing", "kids", "t-shirts"],
+      "brand": "Little Trends",
+      "sku": "KID-LIT-BLU-201",
+      "weight": 1,
+      "dimensions": {
+        "width": 22.5,
+        "height": 2,
+        "depth": 28
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Soft fabric and nice print.",
+          "date": "2026-05-12T09:30:00.000Z",
+          "reviewerName": "Aarav Sharma",
+          "reviewerEmail": "aarav@example.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Good for everyday use.",
+          "date": "2026-05-15T11:20:00.000Z",
+          "reviewerName": "Priya Verma",
+          "reviewerEmail": "priya@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-10T10:00:00.000Z",
+        "updatedAt": "2026-06-10T10:00:00.000Z",
+        "barcode": "7148674605200",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://www.montecarlo.in/cdn/shop/products/52303217-4-26_2-fbW-085212-srT.jpg?v=1696686960&width=1000"
+      ],
+      "thumbnail": "https://www.montecarlo.in/cdn/shop/products/52303217-4-26_2-fbW-085212-srT.jpg?v=1696686960&width=1000"
+    },
+    {
+      "id": 202,
+      "title": "Kids Yellow Graphic T-Shirt",
+      "description": "A bright yellow graphic T-shirt designed for kids. Its casual style makes it easy to pair with jeans, shorts and everyday trousers.",
+      "category": "kids-clothing",
+      "price": 10.99,
+      "discountPercentage": 12,
+      "rating": 4.3,
+      "stock": 35,
+      "tags": ["clothing", "kids", "t-shirts"],
+      "brand": "Tiny Style",
+      "sku": "KID-TIN-YEL-202",
+      "weight": 1,
+      "dimensions": {
+        "width": 22,
+        "height": 2,
+        "depth": 27
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Nice colour and comfortable fit.",
+          "date": "2026-05-14T09:00:00.000Z",
+          "reviewerName": "Neha Gupta",
+          "reviewerEmail": "neha@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-12T10:00:00.000Z",
+        "updatedAt": "2026-06-12T10:00:00.000Z",
+        "barcode": "7148674605201",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://image.hm.com/assets/hm/d0/22/d022893d390b58958573b7ea868e67546b7c070b.jpg?imwidth=2160"
+      ],
+      "thumbnail": "https://image.hm.com/assets/hm/d0/22/d022893d390b58958573b7ea868e67546b7c070b.jpg?imwidth=2160"
+    },
+    {
+      "id": 203,
+      "title": "Kids Red Check Shirt",
+      "description": "A stylish red check shirt for kids, ideal for family outings and casual occasions. Pair it with denim jeans or cotton trousers for a smart everyday look.",
+      "category": "kids-clothing",
+      "price": 18.99,
+      "discountPercentage": 15,
+      "rating": 4.6,
+      "stock": 28,
+      "tags": ["clothing", "kids", "shirts"],
+      "brand": "Junior Wear",
+      "sku": "KID-JUN-RED-203",
+      "weight": 2,
+      "dimensions": {
+        "width": 25,
+        "height": 3,
+        "depth": 30
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Looks smart and fits well.",
+          "date": "2026-05-16T09:00:00.000Z",
+          "reviewerName": "Rohan Mehta",
+          "reviewerEmail": "rohan@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-15T10:00:00.000Z",
+        "updatedAt": "2026-06-15T10:00:00.000Z",
+        "barcode": "7148674605202",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.fcglcdn.com/brainbees/images/products/583x720/22453970a.webp"
+      ],
+      "thumbnail": "https://cdn.fcglcdn.com/brainbees/images/products/583x720/22453970a.webp"
+    },
+    {
+      "id": 204,
+      "title": "Kids White Cotton Shirt",
+      "description": "A classic white cotton shirt for kids with a clean and versatile look. Suitable for celebrations, family gatherings and other special occasions.",
+      "category": "kids-clothing",
+      "price": 16.99,
+      "discountPercentage": 8,
+      "rating": 4.2,
+      "stock": 31,
+      "tags": ["clothing", "kids", "shirts"],
+      "brand": "Little Trends",
+      "sku": "KID-LIT-WHI-204",
+      "weight": 2,
+      "dimensions": {
+        "width": 24,
+        "height": 3,
+        "depth": 29
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Simple and easy to style.",
+          "date": "2026-05-18T10:00:00.000Z",
+          "reviewerName": "Kavita Singh",
+          "reviewerEmail": "kavita@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-18T10:00:00.000Z",
+        "updatedAt": "2026-06-18T10:00:00.000Z",
+        "barcode": "7148674605203",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://japan.tommy.com/top/images/kids/newon/tops.jpg?ver=221014_015404"
+      ],
+      "thumbnail": "https://japan.tommy.com/top/images/kids/newon/tops.jpg?ver=221014_015404"
+    },
+    {
+      "id": 205,
+      "title": "Kids Blue Denim Jeans",
+      "description": "Classic blue denim jeans for kids with a versatile casual design. Easy to pair with T-shirts, shirts and sweatshirts for everyday outfits.",
+      "category": "kids-clothing",
+      "price": 21.99,
+      "discountPercentage": 12.5,
+      "rating": 4.5,
+      "stock": 24,
+      "tags": ["clothing", "kids", "jeans"],
+      "brand": "Denim Junior",
+      "sku": "KID-DEN-BLU-205",
+      "weight": 3,
+      "dimensions": {
+        "width": 26,
+        "height": 4,
+        "depth": 32
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Good quality denim.",
+          "date": "2026-05-20T10:00:00.000Z",
+          "reviewerName": "Amit Joshi",
+          "reviewerEmail": "amit@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-20T10:00:00.000Z",
+        "updatedAt": "2026-06-20T10:00:00.000Z",
+        "barcode": "7148674605204",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://image.hm.com/assets/hm/51/fb/51fbc10a306c8752bd326a902c6270c1c033c91b.jpg?imwidth=2160"
+      ],
+      "thumbnail": "https://image.hm.com/assets/hm/51/fb/51fbc10a306c8752bd326a902c6270c1c033c91b.jpg?imwidth=2160"
+    },
+    {
+      "id": 206,
+      "title": "Kids Black Casual Trousers",
+      "description": "Comfortable black casual trousers for kids. Their simple design makes them suitable for everyday wear, family outings and special events.",
+      "category": "kids-clothing",
+      "price": 17.99,
+      "discountPercentage": 10,
+      "rating": 4.1,
+      "stock": 26,
+      "tags": ["clothing", "kids", "trousers"],
+      "brand": "Junior Wear",
+      "sku": "KID-JUN-BLK-206",
+      "weight": 2,
+      "dimensions": {
+        "width": 25,
+        "height": 3,
+        "depth": 31
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Comfortable and useful.",
+          "date": "2026-05-21T10:00:00.000Z",
+          "reviewerName": "Pooja Jain",
+          "reviewerEmail": "pooja@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-21T10:00:00.000Z",
+        "updatedAt": "2026-06-21T10:00:00.000Z",
+        "barcode": "7148674605205",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://media.falabella.com/falabellaPE/883270768_01/w%3D1500%2Ch%3D1500%2Cfit%3Dcover"
+      ],
+      "thumbnail": "https://media.falabella.com/falabellaPE/883270768_01/w%3D1500%2Ch%3D1500%2Cfit%3Dcover"
+    },
+    {
+      "id": 207,
+      "title": "Kids Pink Floral Dress",
+      "description": "A lovely pink floral dress for kids, designed for birthdays, family gatherings and festive occasions. Its colourful pattern gives the outfit a cheerful look.",
+      "category": "kids-clothing",
+      "price": 24.99,
+      "discountPercentage": 14,
+      "rating": 4.7,
+      "stock": 19,
+      "tags": ["clothing", "kids", "dresses"],
+      "brand": "Little Blossom",
+      "sku": "KID-BLO-PNK-207",
+      "weight": 2,
+      "dimensions": {
+        "width": 25,
+        "height": 4,
+        "depth": 35
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Beautiful colour and design.",
+          "date": "2026-05-22T10:00:00.000Z",
+          "reviewerName": "Simran Kaur",
+          "reviewerEmail": "simran@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-22T10:00:00.000Z",
+        "updatedAt": "2026-06-22T10:00:00.000Z",
+        "barcode": "7148674605206",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://image.hm.com/assets/hm/30/0d/300d85f916ce8c27189ce0ddf18f47c63c304b2d.jpg?imwidth=2160"
+      ],
+      "thumbnail": "https://image.hm.com/assets/hm/30/0d/300d85f916ce8c27189ce0ddf18f47c63c304b2d.jpg?imwidth=2160"
+    },
+    {
+      "id": 208,
+      "title": "Kids Lavender Party Dress",
+      "description": "A lavender party dress for kids with a soft, elegant appearance. Suitable for celebrations, birthday parties and family functions.",
+      "category": "kids-clothing",
+      "price": 27.99,
+      "discountPercentage": 11,
+      "rating": 4.4,
+      "stock": 17,
+      "tags": ["clothing", "kids", "dresses"],
+      "brand": "Little Blossom",
+      "sku": "KID-BLO-LAV-208",
+      "weight": 2,
+      "dimensions": {
+        "width": 26,
+        "height": 4,
+        "depth": 36
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Nice dress for special occasions.",
+          "date": "2026-05-23T10:00:00.000Z",
+          "reviewerName": "Ritu Malhotra",
+          "reviewerEmail": "ritu@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-23T10:00:00.000Z",
+        "updatedAt": "2026-06-23T10:00:00.000Z",
+        "barcode": "7148674605207",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://image.hm.com/assets/hm/98/65/98652f9415cabc5ff3c0f3fa1da8363f268bddf3.jpg?imwidth=2160"
+      ],
+      "thumbnail": "https://image.hm.com/assets/hm/98/65/98652f9415cabc5ff3c0f3fa1da8363f268bddf3.jpg?imwidth=2160"
+    },
+    {
+      "id": 209,
+      "title": "Kids Grey Zip-Up Hoodie",
+      "description": "A grey zip-up hoodie for kids, suitable for cool mornings and casual outings. Its versatile colour pairs easily with jeans and everyday trousers.",
+      "category": "kids-clothing",
+      "price": 22.99,
+      "discountPercentage": 13,
+      "rating": 4.5,
+      "stock": 22,
+      "tags": ["clothing", "kids", "hoodies"],
+      "brand": "Tiny Style",
+      "sku": "KID-TIN-GRY-209",
+      "weight": 3,
+      "dimensions": {
+        "width": 28,
+        "height": 5,
+        "depth": 33
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Warm and comfortable.",
+          "date": "2026-05-24T10:00:00.000Z",
+          "reviewerName": "Deepak Saini",
+          "reviewerEmail": "deepak@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-24T10:00:00.000Z",
+        "updatedAt": "2026-06-24T10:00:00.000Z",
+        "barcode": "7148674605208",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cms.kidsbrandstore.com/api/media/file/levi-s_fall21_evergreen-92.png"
+      ],
+      "thumbnail": "https://cms.kidsbrandstore.com/api/media/file/levi-s_fall21_evergreen-92.png"
+    },
+    {
+      "id": 210,
+      "title": "Kids Green Sweatshirt",
+      "description": "A green sweatshirt for kids with a simple casual design. It is easy to layer over a T-shirt and works well for everyday activities.",
+      "category": "kids-clothing",
+      "price": 19.99,
+      "discountPercentage": 9.5,
+      "rating": 4.2,
+      "stock": 30,
+      "tags": ["clothing", "kids", "sweatshirts"],
+      "brand": "Junior Wear",
+      "sku": "KID-JUN-GRN-210",
+      "weight": 2,
+      "dimensions": {
+        "width": 27,
+        "height": 4,
+        "depth": 32
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Good for daily wear.",
+          "date": "2026-05-25T10:00:00.000Z",
+          "reviewerName": "Anjali Rao",
+          "reviewerEmail": "anjali@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-25T10:00:00.000Z",
+        "updatedAt": "2026-06-25T10:00:00.000Z",
+        "barcode": "7148674605209",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://www.babytoddandco.com/cdn/shop/files/PUE6D1_1.png?v=1768356593&width=1445"
+      ],
+      "thumbnail": "https://www.babytoddandco.com/cdn/shop/files/PUE6D1_1.png?v=1768356593&width=1445"
+    },
+    {
+      "id": 211,
+      "title": "Kids Blue Denim Jacket",
+      "description": "A blue denim jacket for kids that adds a classic layer to casual outfits. Wear it over T-shirts and pair it with jeans or cotton trousers.",
+      "category": "kids-clothing",
+      "price": 29.99,
+      "discountPercentage": 15.5,
+      "rating": 4.6,
+      "stock": 15,
+      "tags": ["clothing", "kids", "jackets"],
+      "brand": "Denim Junior",
+      "sku": "KID-DEN-BLU-211",
+      "weight": 4,
+      "dimensions": {
+        "width": 29,
+        "height": 5,
+        "depth": 35
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Stylish and easy to pair.",
+          "date": "2026-05-26T10:00:00.000Z",
+          "reviewerName": "Manish Kumar",
+          "reviewerEmail": "manish@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-26T10:00:00.000Z",
+        "updatedAt": "2026-06-26T10:00:00.000Z",
+        "barcode": "7148674605210",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://image.hm.com/assets/hm/10/3d/103dcaba8b5a3ea65f0ff952eca1a953fbe53d3f.jpg?imwidth=2160"
+      ],
+      "thumbnail": "https://image.hm.com/assets/hm/10/3d/103dcaba8b5a3ea65f0ff952eca1a953fbe53d3f.jpg?imwidth=2160"
+    },
+    {
+      "id": 212,
+      "title": "Kids Beige Cotton Shorts",
+      "description": "Lightweight beige cotton shorts for kids, ideal for warm weather and casual everyday outfits. Pair them with colourful T-shirts for a relaxed look.",
+      "category": "kids-clothing",
+      "price": 11.99,
+      "discountPercentage": 7.5,
+      "rating": 4.1,
+      "stock": 33,
+      "tags": ["clothing", "kids", "shorts"],
+      "brand": "Little Trends",
+      "sku": "KID-LIT-BEI-212",
+      "weight": 1,
+      "dimensions": {
+        "width": 24,
+        "height": 2,
+        "depth": 26
+      },
+      "warrantyInformation": "No warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Lightweight and comfortable.",
+          "date": "2026-05-27T10:00:00.000Z",
+          "reviewerName": "Sakshi Yadav",
+          "reviewerEmail": "sakshi@example.com"
+        }
+      ],
+      "returnPolicy": "30 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2026-01-27T10:00:00.000Z",
+        "updatedAt": "2026-06-27T10:00:00.000Z",
+        "barcode": "7148674605211",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://www.xpres.co.uk/globalassets/xpres/navigation/new-sublimation-menu/van401-white-b.webp"
+      ],
+      "thumbnail": "https://www.xpres.co.uk/globalassets/xpres/navigation/new-sublimation-menu/van401-white-b.webp"
+    }
+  ]
+}

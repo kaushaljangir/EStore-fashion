@@ -1,0 +1,72 @@
+
+.kids {
+  width: 85%;
+  max-width: 1440px;
+  margin: 48px auto 80px;
+}
+
+.kids__title {
+  margin-bottom: 8px;
+  color: #252525;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+}
+
+.kids__subtitle {
+  margin-bottom: 32px;
+  color: #777777;
+  font-size: 14px;
+}
+
+.kids__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.kids__message {
+  width: 85%;
+  margin: 60px auto;
+  color: #555555;
+  text-align: center;
+  font-size: 16px;
+}
+
+.kids__section + .kids__section {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .kids__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .kids {
+    width: 92%;
+    margin-top: 32px;
+  }
+
+  .kids__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 12px;
+  }
+
+  .kids__subtitle {
+    margin-bottom: 24px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+  .kids__grid {
+    gap: 12px 8px;
+  }
+}

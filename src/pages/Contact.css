@@ -247,15 +247,6 @@
   transform: translateX(5px);
 }
 
-.contact-success {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 8px 0 0;
-  color: #426d43;
-  font-size: 14px;
-}
-
 @media (max-width: 1000px) {
   .contact-page {
     padding: 55px 5%;

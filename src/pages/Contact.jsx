@@ -8,6 +8,7 @@ import {
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
+import toast from "react-hot-toast";
 import "./Contact.css";
 
 const Contact = () => {
@@ -18,8 +19,6 @@ const Contact = () => {
     message: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -27,16 +26,14 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
-
-    setSubmitted(false);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Frontend demo: no message is sent to a server.
-    setSubmitted(true);
-
+    // Show success toast
+    toast.success("Message submitted successfully!");
+    
     setFormData({
       name: "",
       email: "",
@@ -123,15 +120,7 @@ const Contact = () => {
 
           <p className="contact-form-description">
             Fill in the form below and we’ll get back to you soon.
-            
-          {submitted && (
-              <p className="contact-success" role="status">
-                <CheckCircle size={19} />
-                Message submitted successfully!
-              </p>
-            )}
           </p>
-
 
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="contact-input-row">

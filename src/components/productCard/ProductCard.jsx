@@ -1,8 +1,10 @@
 
 import { ShoppingCart, Star } from "lucide-react";
+import { useCart } from "../../context/CartContext";
 import "./ProductCard.css";
 
 const ProductCard = ({
+  id,
   name,
   image,
   price,
@@ -10,6 +12,8 @@ const ProductCard = ({
   rating,
   category,
 }) => {
+  const { addToCart } = useCart();
+
   const discount = Math.min(
     100,
     Math.max(0, Number(discountPercentage) || 0)
@@ -20,6 +24,19 @@ const ProductCard = ({
   const discountedPrice = Math.round(
     originalPrice * (1 - discount / 100)
   );
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: id ?? name,
+      name,
+      image,
+      price: discountedPrice,
+      originalPrice,
+      discountPercentage: discount,
+      rating,
+      category,
+    });
+  };
 
   return (
     <article className="product-card">
@@ -76,7 +93,7 @@ const ProductCard = ({
         <button
           type="button"
           className="product-card__add-button"
-          onClick={() => {}}
+          onClick={handleAddToCart}
         >
           <ShoppingCart size={18} aria-hidden="true" />
           <span>Add to Cart</span>

@@ -1,7 +1,6 @@
 
 .footer {
   position: relative;
-  margin-top: 60px;
   padding: 55px 6% 0;
   color: #263449;
   background-color: #f8f8f7;
@@ -185,6 +184,7 @@
 
 .footer__contact-item a:hover {
   color: #9a8066;
+  font-weight: 500;
 }
 
 @media (max-width: 900px) {
@@ -200,7 +200,6 @@
 
 @media (max-width: 480px) {
   .footer {
-    margin-top: 40px;
     padding: 40px 6% 0;
   }
 

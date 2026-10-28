@@ -1,18 +1,23 @@
 
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "../../context/CartContext";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const { cartCount } = useCart();
+
   return (
     <header className="navbar">
-      <div className="navbar__logo">
-        E<span>STORE</span>
-      </div>
+      <a
+      href="https://kaushaljangir.github.io/EStore-fashion/"
+      className="navbar__logo"
+    >
+      E<span>STORE</span>
+    </a>
 
       <nav className="navbar__links">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
         <Link to="/products/men">Men</Link>
         <Link to="/products/women">Women</Link>
         <Link to="/products/kids">Kids</Link>
@@ -20,8 +25,18 @@ const Navbar = () => {
       </nav>
 
       <div className="navbar__actions">
-        <Link to="/cart" className="navbar__cart" aria-label="Shopping cart">
+        <Link 
+          to="/cart" 
+          className="navbar__cart" 
+          aria-label={`Shopping cart, ${cartCount} items`}
+        >
           <ShoppingCart />
+
+          {cartCount > 0 && (
+            <span className="navbar__cart-count">
+              {cartCount > 99 ? "99+" : cartCount}
+            </span>
+          )}
         </Link>
 
         <Link to="/login" className="navbar__login">

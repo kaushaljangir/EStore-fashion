@@ -1,6 +1,5 @@
-
-import { ShoppingCart, Star } from "lucide-react";
 import { useCart } from "../../context/CartContext";
+import { ShoppingCart, Star, Minus, Plus } from "lucide-react";
 import "./ProductCard.css";
 
 const ProductCard = ({
@@ -12,7 +11,12 @@ const ProductCard = ({
   rating,
   category,
 }) => {
-  const { addToCart } = useCart();
+  const {
+    cartItems,
+    addToCart,
+    updateQuantity,
+    removeFromCart,
+  } = useCart();
 
   const discount = Math.min(
     100,
@@ -24,6 +28,14 @@ const ProductCard = ({
   const discountedPrice = Math.round(
     originalPrice * (1 - discount / 100)
   );
+
+  const productId = id ?? name;
+
+  const cartItem = cartItems.find(
+    (item) => String(item.id) === String(productId)
+  );
+
+  const quantity = cartItem?.quantity ?? 0;
 
   const handleAddToCart = () => {
     addToCart({
@@ -89,15 +101,42 @@ const ProductCard = ({
             </span>
           )}
         </div>
+ 
+        {quantity === 0 ? (
+          <button
+            type="button"
+            className="product-card__add-button"
+            onClick={handleAddToCart}
+          >
+            <ShoppingCart size={18} aria-hidden="true" />
+            <span>Add to Cart</span>
+          </button>
+        ) : (
+          <div className="product-card__quantity">
+            <button
+              type="button"
+              onClick={() =>
+                quantity === 1
+                  ? removeFromCart(productId)
+                  : updateQuantity(productId, quantity - 1)
+              }
+              aria-label="Decrease quantity"
+            >
+              <Minus size={16} />
+            </button>
 
-        <button
-          type="button"
-          className="product-card__add-button"
-          onClick={handleAddToCart}
-        >
-          <ShoppingCart size={18} aria-hidden="true" />
-          <span>Add to Cart</span>
-        </button>
+            <span aria-live="polite">{quantity}</span>
+
+            <button
+              type="button"
+              onClick={() => updateQuantity(productId, quantity + 1)}
+              aria-label="Increase quantity"
+            >
+              <Plus size={16} />
+            </button>
+          </div>
+        )}
+
       </div>
     </article>
   );

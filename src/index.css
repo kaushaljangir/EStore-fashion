@@ -48,4 +48,19 @@ img {
 
 .app {
   flex: 1;
+  padding-top: 80px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .app {
+    padding-top: 125px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .app {
+    padding-top: 115px;
+  }
 }

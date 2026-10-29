@@ -10,13 +10,19 @@ import { Route, Routes } from 'react-router-dom'
 import { Toaster } from "react-hot-toast";
 import { CartProvider } from "./context/CartContext";
 import Cart from './pages/Cart'
+import Login from './pages/login'
+import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
     <div>
+      <AuthProvider>
+
       <CartProvider>
         <Toaster position="top-right" />
         <Routes>
+          <Route path="/login" element={<Login />} />
+
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -28,6 +34,7 @@ const App = () => {
           </Route>
         </Routes>
       </CartProvider>
+      </AuthProvider>
     </div>
   )
 }

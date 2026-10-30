@@ -51,7 +51,7 @@ const Navbar = () => {
           </button>
         ) : (
           <Link to="/login" className="navbar__login">
-            Logout
+            Login
           </Link>
         )}
       </div>

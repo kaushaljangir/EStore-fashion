@@ -34,9 +34,26 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
   };
+  
+  const signup = async ({ name, email, password }) => {
+    if (!name.trim() || !email.trim() || !password) {
+      throw new Error("Please fill in all fields.");
+    }
+
+    const newUser = {
+      name: name.trim(),
+      email: email.trim().toLowerCase(),
+    };
+
+    setUser(newUser);
+
+    toast.success("Account created successfully!");
+
+    return newUser;
+  };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, login, signup, logout }}>
       {children}
     </AuthContext.Provider>
   );

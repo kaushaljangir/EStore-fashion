@@ -1,0 +1,42 @@
+
+.signup-card {
+  max-width: 430px;
+}
+
+.signup-card .auth-logo {
+  margin-bottom: 28px;
+}
+
+.signup-card h1 {
+  margin-bottom: 22px;
+}
+
+.signup-card .auth-form {
+  gap: 7px;
+}
+
+.signup-card .auth-form > label {
+  margin-top: 7px;
+}
+
+.signup-card .auth-submit {
+  margin-top: 12px;
+}
+
+.signup-card .auth-switch {
+  margin-top: 22px;
+}
+
+.signup-card .auth-legal {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 28px 22px;
+  }
+
+  .signup-card .auth-logo {
+    margin-bottom: 24px;
+  }
+}

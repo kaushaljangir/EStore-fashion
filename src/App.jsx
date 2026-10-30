@@ -12,6 +12,7 @@ import { CartProvider } from "./context/CartContext";
 import Cart from './pages/Cart'
 import Login from './pages/Login'
 import { AuthProvider } from "./context/AuthContext";
+import Signup from "./pages/Signup";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Toaster position="top-right" />
           <Routes>
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
 
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />

@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
+import { Minus, Plus } from "lucide-react";
 import "./FeaturedProducts.css";
 import product1 from "../../assets/featured-product-1.jpg";
 import product2 from "../../assets/featured-product-2.jpg";
@@ -52,7 +53,7 @@ const products = [
 
 const FeaturedProducts = () => {
 
-  const { addToCart } = useCart();
+  const { cartItems, addToCart, updateQuantity, removeFromCart } = useCart();
 
   const handleAddToCart = (product) => {
     addToCart({
@@ -93,58 +94,94 @@ const FeaturedProducts = () => {
       </div>
 
       <div className="featured-products__grid">
-        {products.map((product) => (
-          <article
-            className="featured-products__card"
-            key={product.id}
-          >
-            <Link
-              to=''
-              className="featured-products__image"
+        {products.map((product) => {
+          const cartItem = cartItems.find(
+            (item) => String(item.id) === String(product.id ?? product.name)
+          );
+
+          const quantity = cartItem?.quantity ?? 0;
+
+          return(
+            <article
+              className="featured-products__card"
+              key={product.id}
             >
-              <img
-                src={product.image}
-                alt={product.name}
-                loading="lazy"
-              />
-
-              <span className="featured-products__badge">
-                {product.discount}
-              </span>
-            </Link>
-
-            <div className="featured-products__details">
-              <span className="featured-products__category">
-                {product.category}
-              </span>
-
               <Link
-                to={product.link}
-                className="featured-products__name"
+                to=''
+                className="featured-products__image"
               >
-                {product.name}
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  loading="lazy"
+                />
+
+                <span className="featured-products__badge">
+                  {product.discount}
+                </span>
               </Link>
 
-              <div className="featured-products__price">
-                <span>
-                  ₹{product.price.toLocaleString("en-IN")}
+              <div className="featured-products__details">
+                <span className="featured-products__category">
+                  {product.category}
                 </span>
 
-                <del>
-                  ₹{product.originalPrice.toLocaleString("en-IN")}
-                </del>
-              </div>
+                <Link
+                  to={product.link}
+                  className="featured-products__name"
+                >
+                  {product.name}
+                </Link>
 
-              <button
-                type="button"
-                className="featured-products__cart"
-                onClick={() =>handleAddToCart(product)}
-              >
-                Add to Cart <span aria-hidden="true">+</span>
-              </button> 
-            </div>
-          </article>
-        ))}
+                <div className="featured-products__price">
+                  <span>
+                    ₹{product.price.toLocaleString("en-IN")}
+                  </span>
+
+                  <del>
+                    ₹{product.originalPrice.toLocaleString("en-IN")}
+                  </del>
+                </div>
+
+                {quantity === 0 ? (
+                  <button
+                    type="button"
+                    className="featured-products__cart"
+                    onClick={() => handleAddToCart(product)}
+                  >
+                    Add to Cart <span aria-hidden="true">+</span>
+                  </button>
+                ) : (
+                  <div className="featured-products__quantity">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        quantity === 1
+                          ? removeFromCart(product.id ?? product.name)
+                          : updateQuantity(product.id ?? product.name, quantity - 1)
+                      }
+                      aria-label="Decrease quantity"
+                    >
+                      <Minus size={16} />
+                    </button>
+
+                    <span aria-live="polite">{quantity}</span>
+
+                    <button
+                      type="button"
+                      onClick={() =>
+                        updateQuantity(product.id ?? product.name, quantity + 1)
+                      }
+                      aria-label="Increase quantity"
+                    >
+                      <Plus size={16} />
+                    </button>
+                  </div>
+                )} 
+              </div>
+            </article>
+          )
+        })}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
 import "./FeaturedProducts.css";
 import product1 from "../../assets/featured-product-1.jpg";
 import product2 from "../../assets/featured-product-2.jpg";
@@ -50,6 +51,24 @@ const products = [
 ];
 
 const FeaturedProducts = () => {
+
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (product) => {
+    addToCart({
+      id: product.id ?? product.name,
+      name: product.name,
+      image: product.image,
+      price: product.price,
+      originalPrice: product.originalPrice,
+      discountPercentage: Math.round(
+        ((product.originalPrice - product.price) /
+          product.originalPrice) * 100
+      ),
+      category: product.category,
+    });
+  };
+
   return (
     <section className="featured-products">
       <div className="featured-products__header">
@@ -119,9 +138,7 @@ const FeaturedProducts = () => {
               <button
                 type="button"
                 className="featured-products__cart"
-                onClick={() =>
-                  alert(`${product.name} — cart functionality coming soon!`)
-                }
+                onClick={() =>handleAddToCart(product)}
               >
                 Add to Cart <span aria-hidden="true">+</span>
               </button> 

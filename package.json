@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:github": "vite build --mode github",
+    "build:github": "vite build --mode github && node -e \"const fs=require('fs');let html=fs.readFileSync('dist/index.html','utf8');html=html.replace(/<script>[\\s\\S]*?spa-redirect[\\s\\S]*?<\\/script>/,'');html=html.replace('</body>','<script>const originalPath=location.pathname+location.search+location.hash;sessionStorage.setItem(\\'spa-redirect\\',originalPath);location.replace(\\'/EStore-fashion/\\');</script></body>');fs.writeFileSync('dist/404.html',html);\"",
     "lint": "eslint .",
     "preview": "vite preview"
   },
